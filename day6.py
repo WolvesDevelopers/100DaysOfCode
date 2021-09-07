@@ -13,12 +13,12 @@ def collatz(number):
         elif(number % 2 == 1):
             number = 3 * number + 1
             print (number)
+
   
 try:   
     print("==========COLLATZ SEQUENCE.============")
     my_number = int(input("Enter a number: \n"))
-    my_function = collatz(my_number)
-    print(my_function)
+    collatz(my_number)
 
 except ValueError:
         print("Invalid Value")    
