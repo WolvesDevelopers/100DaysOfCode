@@ -1,25 +1,23 @@
 def collatz(number):
-    
+
     while number > 1:
 
         if(number == 1):
             break
-        
+
         if(number % 2 == 0):
             number = number // 2
-            print (number)
-            
+            print(number)
 
         elif(number % 2 == 1):
             number = 3 * number + 1
-            print (number)
+            print(number)
 
-  
-try:   
+
+try:
     print("==========COLLATZ SEQUENCE.============")
     my_number = int(input("Enter a number: \n"))
     collatz(my_number)
 
 except ValueError:
-        print("Invalid Value")    
-
+    print("Invalid Value")
