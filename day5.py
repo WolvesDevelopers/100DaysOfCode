@@ -54,3 +54,4 @@ for char in aux_list:
   password += char
 
 print(f"Your password is: {password}")
+

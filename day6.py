@@ -14,10 +14,21 @@ def collatz(number):
             print(number)
 
 
-try:
-    print("==========COLLATZ SEQUENCE.============")
-    my_number = int(input("Enter a number: \n"))
-    collatz(my_number)
+acces = True
 
-except ValueError:
-    print("Invalid Value")
+while acces:
+    try:
+        print("==========COLLATZ SEQUENCE.============")
+        my_number = int(input("Enter a number: \n"))
+        collatz(my_number)
+        prompt = "Do you want to repeat the operation?"
+        prompt += "\nPress Yes to continue or No to exit: "
+        question = input(prompt).title()
+
+        if question == 'No':
+            break
+        elif question == 'Yes':
+            continue
+
+    except ValueError:
+        print("Invalid Value")
